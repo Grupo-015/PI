@@ -1,10 +1,10 @@
 body {
     background-image: url(../svg/background\ green.svg);
-    height: 100vh; /* Atualizado em 20/02 */
+    height: 100vh;
 }
 
 form {
-    width: 80%; /* Atualizado em 20/02 */
+    width: 80%;
 }
 
 .container-form {
@@ -63,7 +63,7 @@ form {
     padding: 0.2em;
 }
 
-label { /* Atualizado em 20/02 */
+label {
   color: #fff;
   /* position: absolute; */
   left: 0;
@@ -74,7 +74,7 @@ label { /* Atualizado em 20/02 */
   border-bottom: 1px solid #ffffff;
 }
 
-input { /* Atualizado em 20/02 */
+input {
     color: white;
     font-size: 28px;
     width: 100%;
