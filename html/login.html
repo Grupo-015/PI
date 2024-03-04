@@ -9,28 +9,30 @@
         <link rel="Stylesheet" href="../css/login.css">
     </head>
     <body>
-        
+
+        <!-- Video adicionado em 03/03 -->             
         <header>
             <h1>Projeto Integrador I - DRP01-PJI110-SALA003-GRUPO-015</h1>
         </header>
         <section class="container-login">            
-            <form>
+            <form class="form-container">
                 <div class="acesso-ao-sistema">
                     <h1>Acesso ao sistema</h1>
                 </div>
-                <div class="form-usuario form">
-                    <label>Usuário</label>
-                    <input class="form-label" type="text" name="email" id="email" placeholder="Informe seu login">
+                
+                <div class="form-usuario form alinhar">
+                    <!-- <label>Usuário</label> -->
+                    <div class="alinhar"><img src="../png/user-icon-blue.png" class="icon"><input class="form-label" type="text" name="email" id="email" placeholder="Informe seu login"></div>
                 </div>
 
-                <div class="form-senha form">
-                    <label>Senha</label>
-                    <input class="form-label" type="password" name="senha" id="senha" placeholder="Informe sua senha">
+                <div class="form-senha form alinhar">
+                    <!-- <label>Senha</label> -->
+                    <div class="alinhar"><img src="../png/password-icon-blue (2).png" class="icon"><input class="form-label" type="password" name="senha" id="senha" placeholder="Informe sua senha"></div>
                 </div>
 
                 <div class="form">                    
                     <button class="form-submit form-label" type="button" onclick="login()">Entrar</button>
-                </div>                
+                </div>
             </form>
         </section>
         <footer class="rodape">
