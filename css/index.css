@@ -6,8 +6,6 @@ body {
     align-items: center;
 }
 
-/* TESTANDO */
-
 header h1 {
     color: white;
     font-weight: bold;
@@ -86,8 +84,6 @@ header h1 {
       padding: 0 1em 0 0;
   }
 
-/* TESTANDO */
-
 .botao {
     padding: 1em 4em;
     border: solid blue 1px;
@@ -152,13 +148,6 @@ p {
      }
 }
 
-/* TESTES COM CSS */
-
-/* #userLogin {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-} */
-
 .ocultar {
     display: none;
 }
@@ -168,6 +157,3 @@ p {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-/* TESTES COM CSS */
-
