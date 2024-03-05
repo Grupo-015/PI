@@ -14,7 +14,7 @@ header h1 {
 }
 
 .form-container { /* Adicionado em 03/03 */ 
-    width: 85%; /* Atualizado em 03/03 */
+    width: 25em; /* Atualizado em 03/03 */
 }
 
 .container-login {
