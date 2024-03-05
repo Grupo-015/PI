@@ -14,6 +14,28 @@ const form = {
     senha: () => document.getElementById("senha"),
 }
 
+// TESTES COM JAVASCRIPT
+
+function transicao() {
+
+    var btnGetStart = document.getElementById("btnGetStart");
+    var userLogin = document.getElementById("userLogin");
+
+    // Esmaece o painel de início
+    // btnGetStart.style.opacity = "0";
+    // btnGetStart.style.transition = "opacity 0s ease-in-out";
+
+    // Exibe o painel de login
+    userLogin.classList.remove("ocultar");
+    userLogin.classList.add("show");
+
+    btnGetStart.classList.remove("botao");
+    btnGetStart.classList.add("ocultar");
+}
+
+// TESTES COM JAVASCRIPT
+
+
 // const saveAs = require("./FileSaver");
 
 // import { saveAs } from 'file-saver';
