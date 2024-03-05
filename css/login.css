@@ -1,8 +1,7 @@
 body {
-    /* background-image: url(../svg/background\ orange.svg); */ /* Desativado em 03/03 */
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,236,252,1) 100%);
-    height: 100vh; /* Adicionado em 02/03 */
+    height: 100vh;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -13,20 +12,14 @@ header h1 {
   padding: 2em 2em 0 2em;
 }
 
-.form-container { /* Adicionado em 03/03 */ 
-    width: 25em; /* Atualizado em 03/03 */
+.form-container {
+    width: 25em;
 }
 
 .container-login {
-    /* background-color: rgb(111, 111, 111); */
-    /* background: white; */
     display: flex;
-    /* border: none; */ /* Atualizado em 04/03 */
-    /* border-color: black; */
-    /* border-radius: 6px; /* Atualizado em 04/03 */
-    /* box-shadow: 10px 10px 10px; */
-    width: 33%; /* Atualizado em 02/03 */
-    height: 70%; /* Atualizado em 02/03 */
+    width: 33%;
+    height: 70%;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -42,7 +35,6 @@ header h1 {
 .form-label {
     font-size: 1em;
     padding: 1em;
-    /* border-radius: 34px; */
 }
 
 .form-logo {
@@ -89,27 +81,4 @@ header h1 {
     height: 100px;
     width: 200px;
     padding: 0 1em 0 0;
-}
-
-/* Configurações de vídeo adicionado em 03/03 */
-
-.video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .video {
-        width: auto;
-        height: 100%;
-    }
 }
