@@ -1,0 +1,34 @@
+body {
+    width: 50em;
+    margin: auto;
+}
+
+.sanfona-elemento {
+    border-bottom: 1px solid #ccc;
+}
+  
+.sanfona-elemento label {
+    display: block;
+    cursor: pointer;
+    padding: 12px;
+    background-color: rgb(255,192,203);
+}
+  
+.sanfona-elemento .conteudo {
+    display: none;
+    padding: 12px;
+}
+  
+input[type="checkbox"] {
+    display: none;
+}
+  
+input[type="checkbox"]:checked + label + .conteudo {
+    display: block;
+    border: groove;
+}
+
+.input {
+    width: 50em;
+    margin: 1em;
+}
