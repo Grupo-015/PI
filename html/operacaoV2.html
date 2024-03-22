@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <title>Nova Tela de Operação</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="reset.css">
+        <link rel="Stylesheet" href="operacaoV2.css">
+    </head>
+    <body>      
+        <script src="script.js"></script>  
+        <div class="sanfona">
+
+            <div class="sanfona-elemento">
+                <input type="checkbox" id="elemento1">
+                <label for="elemento1">Dados do Comprador</label>
+                <div class="conteudo">
+                    
+                  
+                    <div>
+                        <!-- <label class="form-label" for="nome-comprador">Nome do Comprador/Cliente</label> -->
+                        <input class="input" type="text" id="nome-comprador" name="nome-comprador" placeholder="Nome do Comprador">
+                    </div>            
+                  
+                    <div class="form-div">
+                        <!-- <label class="form-label" for="email-comprador">E-mail do Comprador/Cliente</label> -->
+                        <input class="input" type="email" id="email-comprador" name="email-comprador" placeholder="Email do Comprador">
+                    </div>
+    
+                    <div class="form-div">
+                        <!-- <label class="form-label" for="telefone-comprador">Telefone do Comprador/Cliente</label> -->
+                        <input class="input" type="tel" id="telefone-comprador" name="telefone-comprador" placeholder="Telefone Comprador (DDD) XXXXX-XXXX">
+                    </div>
+
+
+                </div>
+            </div>
+            
+            <div class="sanfona-elemento">
+                <input type="checkbox" id="elemento2">
+                <label for="elemento2">Menu</label>
+                <div class="conteudo">
+                    
+                  
+                    <div class="container">
+    
+                        <div>
+                            <div><label for="cookieTradicionalGrande">Cookie Tradicional (Grande - Pacote com 2 Cookies) - R$ 10,00</label></div>
+                            <input class="input" type="text" id="cookieTradicionalGrande" name="cookieTradicionalGrande" placeholder="Digite a Quantidade">                            
+                            <img src="icons8-biscoito-48.png" id="imagem">
+                        </div>
+    
+                        
+                        <div>
+                            <div><label for="cookieTradicionalMini">Cookie Tradicional (Mini - Pacote com 12 Cookies) - R$ 10,00</label></div>
+                            <input class="input" type="tel" id="cookieTradicionalMini" name="cookieTradicionalMini" placeholder="Digite a Quantidade">
+                            <img src="icons8-biscoito-48.png" id="imagem">
+                        </div>
+    
+                        <div>
+                            <div><label for="cookieRecheadoDoceDeLeite">Recheado com Doce de Leite - R$ 12,00</label></div>
+                            <input class="input" type="email" id="cookieRecheadoDoceDeLeite" name="cookieRecheadoDoceDeLeite" placeholder="Digite a Quantidade">
+                            <img src="icons8-biscoito-48.png" id="imagem">
+                        </div>
+    
+                        <div>
+                            <div><label for="cookieRecheadoNutella">Recheado com Nutella - R$ 14,00</label></div>
+                            <input class="input" type="tel" id="cookieRecheadoNutella" name="cookieRecheadoNutella" placeholder="Digite a Quantidade">
+                            <img src="icons8-biscoito-48.png" id="imagem">
+                        </div>
+
+                        <div>
+                            <div><label for="tortaDeCookieCarameloENutella">Torta de Cookie (500g - Caramelo Salgado e Nutella) - R$ 50,00</label></div>
+                            <input class="input" type="tel" id="tortaDeCookieCarameloENutella" name="tortaDeCookieCarameloENutella" placeholder="Digite a Quantidade">
+                            <img src="icons8-biscoito-48.png" id="imagem">
+                        </div>
+
+                        <div>
+                            <div><label for="tortaDeCookieNutella">Torta de Cookie (500g - Somente Nutella) - R$ 50,00</label></div>
+                            <input class="input" type="tel" id="tortaDeCookieNutella" name="tortaDeCookieNutella" placeholder="Digite a Quantidade">
+                            <img src="icons8-biscoito-48.png" id="imagem">
+                        </div>
+
+                        <div>
+                            <div><label for="valorTotal">Valor Total do Pedido</label></div>
+                            <input class="input" type="text" id="valorTotal" placeholder="Valor Total" disabled>
+                            <img src="icons8-biscoito-48.png" id="imagem" onclick="calcula()">
+                        </div>
+    
+                    </div>
+
+
+                </div>
+            </div>
+            
+            <div class="sanfona-elemento">
+                <input type="checkbox" id="elemento3">
+                <label for="elemento3">Dados da Entrega</label>
+                <div class="conteudo">
+                    
+
+                    <div class="form-div">
+                        <!-- <label class="form-label" for="data-entrega">Previsão de Entrega</label> -->
+                        <div><input class="input" type="text" id="rua-entrega" name="rua-entrega" placeholder="Rua/Logradouro"></div>
+                        <div><input class="input" type="text" id="numero-entrega" name="numero-entrega" placeholder="Nº"></div>
+                        <div><input class="input" type="text" id="cep-entrega" name="cep-entrega" placeholder="CEP"></div>
+                        <div><input class="input" type="text" id="estado-entrega" name="estado-entrega" placeholder="Estado"></div>
+                        <div><input class="input" type="text" id="cidade-entrega" name="cidade-entrega" placeholder="Cidade"></div>
+                        <div><input class="input" type="date" id="data-entrega" name="data-entrega"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="sanfona-elemento">
+                <input type="checkbox" id="elemento4">
+                <label for="elemento4">Observações</label>
+                <div class="conteudo">
+                    
+                    
+                    <div class="form-div">
+                        <!-- <label class="form-label" for="observacoes">Observações</label> -->
+                        <input class="input inputObservacoes" type="text" id="observacoes" name="observacoes" placeholder="Observações">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <button onclick="download()">Gerar Ordem</button>
+
+
+            <script src="js/FileSaver.js-master/src/FileSaver.js"></script>
+            <script>
+    
+                const saveAs = require("./FileSaver");
+                import { saveAs } from 'file-saver';
+    
+            </script>
+    
+            <script>
+                function download() {
+                    alert("Ordem de Serviço gerada com sucesso");
+    
+    
+                    //-------------- DADOS DO COMPRADOR -------------
+                    var nomeComprador = document.getElementById("nome-comprador").value;
+                    var emailComprador = document.getElementById("email-comprador").value;
+                    var telefoneComprador = document.getElementById("telefone-comprador").value;                
+                    
+                    //----------- MENU ----------
+    
+                    var cookieTradicionalGrande = document.getElementById("cookieTradicionalGrande").value;
+                    var cookieTradicionalMini = document.getElementById("cookieTradicionalMini").value;
+                    var cookieRecheadoDoceDeLeite = document.getElementById("cookieRecheadoDoceDeLeite").value;
+                    var cookieRecheadoNutella = document.getElementById("cookieRecheadoNutella").value;
+                    var tortaDeCookieCarameloENutella = document.getElementById("tortaDeCookieCarameloENutella").value;
+                    var tortaDeCookieNutella = document.getElementById("tortaDeCookieNutella").value;
+                    var valorTotal = document.getElementById("valorTotal").value;
+    
+                    //------------ INFORMAÇÕES DA ENTREGA -----------
+                    var ruaEntrega = document.getElementById("rua-entrega").value;
+                    var numEntrega = document.getElementById("numero-entrega").value;
+                    var cepEntrega = document.getElementById("cep-entrega").value;
+                    var estadoEntrega = document.getElementById("estado-entrega").value;
+                    var cidadeEntrega = document.getElementById("cidade-entrega").value;
+                    var dataEntrega = document.getElementById("valorTotal").value;
+                    
+                    //------------ INFORMAÇÕES ADICIONAIS -----------
+                    var observacoes = document.getElementById("observacoes").value;
+    
+                    var blob = new Blob(["---------------- ORDEM DE SERVIÇO --------------- \n \n", 
+                    
+    
+    
+                    "\n--------------- DADOS DO COMPRADOR -------------- \n", "\n Nome do Comprador: ",
+                    nomeComprador, "\n Email do Comprador: ",
+                    emailComprador, "\n Telefone do Comprador: ",
+                    telefoneComprador, "\n",    
+                   
+                    "\n---------------- PEDIDO -------------- \n \n Cookie Tradicional Grande: ",
+                    cookieTradicionalGrande, "\n Cookie Tradicional Mini: ",
+                    cookieTradicionalMini, "\n Cookie Recheado Doce De Leite: ",
+                    cookieRecheadoDoceDeLeite, "\n Cookie Recheado Nutella \n",
+                    cookieRecheadoNutella, "\n Torta De Cookie Caramelo e Nutella: ",
+                    tortaDeCookieCarameloENutella, "\n Torta De Cookie Nutella R$: ",
+                    tortaDeCookieNutella, "\n Valor Total: ",
+                    valorTotal, "\n", 
+                
+                    "\n------------- INFORMAÇÕES DA ENTREGA ------------ \n", "\n Rua: ",
+                    ruaEntrega, "\n Nº: ",
+                    numEntrega, "\n CEP: ",
+                    cepEntrega, "\n Estado: ",
+                    estadoEntrega, "\n Cidade: ",
+                    cidadeEntrega, "\n Data da Entrega: ",
+                    dataEntrega, "\n",
+    
+                    "\n------------- INFORMAÇOES ADICIONAIS ------------ \n",
+                    "\n Observações: ",
+                    observacoes,],
+    
+    
+                    {type: "text/plain;charset=utf-8"});
+                    saveAs(blob, nomeComprador);
+                }
+            </script>
+
+        </div>        
+    </body>
+</html>
