@@ -127,3 +127,10 @@ function verificaTortaDeCookieNutella() {
         return texto;
     }
 }
+
+function somaCookieTradicionalGrande() {
+    
+    document.getElementById("cookieTradicionalGrande").value++;
+    calcula();
+
+}
