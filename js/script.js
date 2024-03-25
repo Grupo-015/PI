@@ -55,3 +55,75 @@ function calcula() {
     // Atualizar o campo de valor total no formulário
     document.getElementById("valorTotal").value = "R$ " + valorTotal.toFixed(2);
 }
+
+function verificaCookieTradicionalGrande() {
+
+        if(document.getElementById("cookieTradicionalGrande").value != 0) {
+            var texto = "Cookie Tradicional Grande: ";
+            return texto;
+        }
+        else {
+            var texto = " ";
+            return texto;
+        }
+}
+
+function verificaCookieTradicionalMini() {
+
+    if(document.getElementById("cookieTradicionalMini").value != 0) {
+        var texto = "Cookie Tradicional Mini: ";
+        return texto;
+    }
+    else {
+        var texto = " ";
+        return texto;
+    }
+}
+
+function verificaCookieRecheadoDoceDeLeite() {
+
+    if(document.getElementById("cookieRecheadoDoceDeLeite").value != 0) {
+        var texto = "Cookie Recheado Doce De Leite: ";
+        return texto;
+    }
+    else {
+        var texto = " ";
+        return texto;
+    }
+}
+
+function verificaCookieRecheadoNutella() {
+
+    if(document.getElementById("cookieRecheadoNutella").value != 0) {
+        var texto = "Cookie Recheado Nutella: ";
+        return texto;
+    }
+    else {
+        var texto = " ";
+        return texto;
+    }
+}
+
+function verificaTortaDeCookieCarameloENutella() {
+
+    if(document.getElementById("tortaDeCookieCarameloENutella").value != 0) {
+        var texto = "Torta De Cookie Caramelo e Nutella: ";
+        return texto;
+    }
+    else {
+        var texto = " ";
+        return texto;
+    }
+}
+
+function verificaTortaDeCookieNutella() {
+
+    if(document.getElementById("tortaDeCookieNutella").value != 0) {
+        var texto = "Torta De Cookie Nutella: ";
+        return texto;
+    }
+    else {
+        var texto = " ";
+        return texto;
+    }
+}
