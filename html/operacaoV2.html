@@ -139,7 +139,7 @@
     
             </script>
     
-            <script>
+                        <script>
                 function download() {
                     alert("Ordem de Serviço gerada com sucesso");
     
@@ -170,7 +170,7 @@
                     //------------ INFORMAÇÕES ADICIONAIS -----------
                     var observacoes = document.getElementById("observacoes").value;
     
-                    var blob = new Blob(["---------------- ORDEM DE SERVIÇO --------------- \n \n", 
+                    var blob = new Blob(["---------------- ORDEM DE SERVIÇO --------------- \n \n",
                     
     
     
@@ -179,12 +179,12 @@
                     emailComprador, "\n Telefone do Comprador: ",
                     telefoneComprador, "\n",    
                    
-                    "\n---------------- PEDIDO -------------- \n \n Cookie Tradicional Grande: ",
-                    cookieTradicionalGrande, "\n Cookie Tradicional Mini: ",
-                    cookieTradicionalMini, "\n Cookie Recheado Doce De Leite: ",
-                    cookieRecheadoDoceDeLeite, "\n Cookie Recheado Nutella: ",
-                    cookieRecheadoNutella, "\n Torta De Cookie Caramelo e Nutella: ",
-                    tortaDeCookieCarameloENutella, "\n Torta De Cookie Nutella R$: ",
+                    "\n---------------- PEDIDO -------------- \n \n", verificaCookieTradicionalGrande(),
+                    cookieTradicionalGrande, "\n", verificaCookieTradicionalMini(),
+                    cookieTradicionalMini, "\n", verificaCookieRecheadoDoceDeLeite(),
+                    cookieRecheadoDoceDeLeite, "\n", verificaCookieRecheadoNutella(),
+                    cookieRecheadoNutella, "\n", verificaTortaDeCookieCarameloENutella(),
+                    tortaDeCookieCarameloENutella, "\n", verificaTortaDeCookieNutella(),
                     tortaDeCookieNutella, "\n Valor Total: ",
                     valorTotal, "\n", 
                 
