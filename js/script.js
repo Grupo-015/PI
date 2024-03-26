@@ -134,3 +134,38 @@ function somaCookieTradicionalGrande() {
     calcula();
 
 }
+
+function somaCookieTradicionalMini() {
+    
+    document.getElementById("cookieTradicionalMini").value++;
+    calcula();
+
+}
+
+function somaCookieRecheadoDoceDeLeite() {
+    
+    document.getElementById("cookieRecheadoDoceDeLeite").value++;
+    calcula();
+
+}
+
+function somaCookieRecheadoNutella() {
+    
+    document.getElementById("cookieRecheadoNutella").value++;
+    calcula();
+
+}
+
+function somaTortaDeCookieCarameloENutella() {
+    
+    document.getElementById("tortaDeCookieCarameloENutella").value++;
+    calcula();
+
+}
+
+function somaTortaDeCookieNutella() {
+    
+    document.getElementById("tortaDeCookieNutella").value++;
+    calcula();
+
+}
