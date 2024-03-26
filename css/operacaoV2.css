@@ -3,6 +3,28 @@ body {
     margin: auto;
 }
 
+.rodape, .cabecalho {
+    display: flex;
+    justify-content:center;
+    padding: 2em 0 2em 0;
+    color: black;
+    font-family: monospace;
+    align-items: center;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.rodape p {
+    padding: 1em 0 1em 0;
+}
+
+p {
+    text-align: center;
+}
+
 .sanfona-elemento {
     border-bottom: 1px solid #ccc;
 }
