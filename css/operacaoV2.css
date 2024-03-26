@@ -1,6 +1,7 @@
 body {
     width: 50em;
     margin: auto;
+    background: linear-gradient(80deg, #e4ffe8 0%, #d3e8ff 90%);
 }
 
 .rodape, .cabecalho {
