@@ -2,7 +2,7 @@
 
 <html lang="pt-BR">
     <head>
-        <title>Nova Tela de Operação</title>
+        <title>Maki&Giovana Cookies</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="Stylesheet" href="../css/reset.css">
@@ -14,7 +14,7 @@
         <header class="cabecalho">
             <h1>Projeto Integrador I - DRP01-PJI110-SALA003-GRUPO-015</h1>
         </header>
-        
+
         <div class="sanfona">
 
             <div class="sanfona-elemento">
@@ -52,7 +52,7 @@
     
                         <div>
                             <div><label for="cookieTradicionalGrande">Cookie Tradicional (Grande - Pacote com 2 Cookies) - R$ 10,00</label></div>
-                            <input class="input" type="tel" id="cookieTradicionalGrande" name="cookieTradicionalGrande" placeholder="Digite a Quantidade" onchange="calcula()">                            
+                            <input class="input" type="text" id="cookieTradicionalGrande" name="cookieTradicionalGrande" placeholder="Digite a Quantidade" onchange="calcula()">                            
                             <img src="../png/icons8-biscoito-48.png" id="imagem" onclick="somaCookieTradicionalGrande()">
                         </div>
     
@@ -65,7 +65,7 @@
     
                         <div>
                             <div><label for="cookieRecheadoDoceDeLeite">Recheado com Doce de Leite - R$ 12,00</label></div>
-                            <input class="input" type="tel" id="cookieRecheadoDoceDeLeite" name="cookieRecheadoDoceDeLeite" placeholder="Digite a Quantidade" onchange="calcula()">
+                            <input class="input" type="email" id="cookieRecheadoDoceDeLeite" name="cookieRecheadoDoceDeLeite" placeholder="Digite a Quantidade" onchange="calcula()">
                             <img src="../png/icons8-biscoito-48.png" id="imagem" onclick="somaCookieRecheadoDoceDeLeite()">
                         </div>
     
@@ -133,7 +133,9 @@
                 </div>
             </div>
 
-            <button onclick="download()">Gerar Pedido</button>
+            <div class="btn">
+                <button class="botao" onclick="download()">Gerar Pedido</button>
+            </div>
 
             <footer class="rodape">
                 <p>Copyright &copy; 2024 - by GRUPO 015</p>
@@ -144,7 +146,6 @@
                   Rodrigo Ferreira Zanoti -
                   Letícia dos Santos Alves</p>            
             </footer>
-
 
             <script src="../js/FileSaver.js-master/src/FileSaver.js"></script>
             <script>
