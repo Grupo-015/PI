@@ -2,11 +2,12 @@ body {
     width: 50em;
     margin: auto;
     background: linear-gradient(80deg, #e4ffe8 0%, #d3e8ff 90%);
+    /* background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); */
 }
 
 .rodape, .cabecalho {
     display: flex;
-    justify-content:center;
+    justify-content:center; 
     padding: 2em 0 2em 0;
     color: black;
     font-family: monospace;
@@ -28,13 +29,16 @@ p {
 
 .sanfona-elemento {
     border-bottom: 1px solid #ccc;
-}
+}   
   
 .sanfona-elemento label {
     display: block;
     cursor: pointer;
     padding: 12px;
-    background-color: rgb(255,192,203);
+    /* background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%); */
+    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+    background-color: #b6d9ff;
+    margin: 1em;
 }
   
 .sanfona-elemento .conteudo {
@@ -54,6 +58,17 @@ input[type="checkbox"]:checked + label + .conteudo {
 .input {
     width: 50em;
     margin: 1em;
+}
+
+.btn {
+    text-align: center;
+}
+
+.botao {
+    padding: 1em 3em 1em 3em;
+    margin-top: 1em;
+    border-radius: 24px;
+    background-color: #b6d9ff;
 }
 
 @media (max-width: 920px) {
