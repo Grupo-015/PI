@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <title>Maki&Giovana Cookies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="../../static/css/reset.css">
+        <link rel="Stylesheet" href="../../static/css/operacaoV2.css">
+    </head>
+    <body>      
+        <script src="../../static/js/script.js"></script>
+
+        <header class="cabecalho">
+            <h1>Projeto Integrador I - DRP01-PJI110-SALA003-GRUPO-015</h1>
+        </header>
+
+        <form>
+          <div class="sanfona">
+  
+              <div class="sanfona-elemento">
+                  <input type="checkbox" id="elemento1">
+                  <label for="elemento1">Dados do Comprador</label>
+                  <div class="conteudo">
+                      
+                    
+                      <div>
+                          <input class="input" id="nomeComprador" name="nomeComprador" placeholder="Nome do Comprador" type="text">
+                      </div>            
+                    
+                      <div class="form-div">
+                          <input class="input" id="emailComprador" name="emailComprador" placeholder="Email do Comprador" type="email">
+                      </div>
+      
+                      <div class="form-div">
+                          <input class="input" id="telefoneComprador" name="telefoneComprador" placeholder="Telefone Comprador (DDD) XXXXX-XXXX" type="tel">
+                      </div>
+  
+  
+                  </div>
+              </div>
+              
+              <div class="sanfona-elemento">
+                  <input type="checkbox" id="elemento2">
+                  <label for="elemento2">Menu</label>
+                  <div class="conteudo">
+                      
+                    
+                      <div class="container">
+      
+                          <div>
+                              <div><label for="cookieTradicionalGrande">Cookie Tradicional (Grande - Pacote com 2 Cookies) - R$ 10,00</label></div>
+                              <input class="input" id="cookieTradicionalGrande" name="cookieTradicionalGrande" placeholder="Digite a Quantidade" onchange="calcula()" type="number">                            
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="somaCookieTradicionalGrande()">
+                          </div>
+      
+                          
+                          <div>
+                              <div><label for="cookieTradicionalMini">Cookie Tradicional (Mini - Pacote com 12 Cookies) - R$ 10,00</label></div>
+                              <input class="input" id="cookieTradicionalMini" name="cookieTradicionalMini" placeholder="Digite a Quantidade" onchange="calcula()" type="number">
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="somaCookieTradicionalMini()">
+                          </div>
+      
+                          <div>
+                              <div><label for="cookieRecheadoDoceDeLeite">Recheado com Doce de Leite - R$ 12,00</label></div>
+                              <input class="input" id="cookieRecheadoDoceDeLeite" name="cookieRecheadoDoceDeLeite" placeholder="Digite a Quantidade" onchange="calcula()" type="number">
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="somaCookieRecheadoDoceDeLeite()">
+                          </div>
+      
+                          <div>
+                              <div><label for="cookieRecheadoNutella">Recheado com Nutella - R$ 14,00</label></div>
+                              <input class="input" id="cookieRecheadoNutella" name="cookieRecheadoNutella" placeholder="Digite a Quantidade" onchange="calcula()" type="number">
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="somaCookieRecheadoNutella()">
+                          </div>
+  
+                          <div>
+                              <div><label for="tortaDeCookieCarameloENutella">Torta de Cookie (500g - Caramelo Salgado e Nutella) - R$ 50,00</label></div>
+                              <input class="input" id="tortaDeCookieCarameloENutella" name="tortaDeCookieCarameloENutella" placeholder="Digite a Quantidade" onchange="calcula()" type="number">
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="somaTortaDeCookieCarameloENutella()">
+                          </div>
+  
+                          <div>
+                              <div><label for="tortaDeCookieNutella">Torta de Cookie (500g - Somente Nutella) - R$ 50,00</label></div>
+                              <input class="input" id="tortaDeCookieNutella" name="tortaDeCookieNutella" placeholder="Digite a Quantidade" onchange="calcula()" type="number">
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="somaTortaDeCookieNutella()">
+                          </div>
+  
+                          <div>
+                              <div><label for="valorTotal">Valor Total do Pedido</label></div>
+                              <input class="input" id="valorTotal" name="valorTotal" placeholder="Valor Total" disabled>
+                              <img src="../../static/png/icons8-biscoito-48.png" id="imagem" onclick="calcula()">
+                          </div>
+      
+                      </div>
+  
+  
+                  </div>
+              </div>
+              
+              <div class="sanfona-elemento">
+                  <input type="checkbox" id="elemento3">
+                  <label for="elemento3">Dados da Entrega</label>
+                  <div class="conteudo">
+                      
+  
+                      <div class="form-div">
+                          <div><input class="input" id="ruaEntrega" name="ruaEntrega" placeholder="Rua/Logradouro" type="text"></div>
+                          <div><input class="input" id="numeroEntrega" name="numeroEntrega" placeholder="Nº" type="number"></div>
+                          <div><input class="input" id="cepEntrega" name="cepEntrega" placeholder="CEP" type="number"></div>
+                          <div><input class="input" id="estadoEntrega" name="estadoEntrega" placeholder="Estado" type="text"></div>
+                          <div><input class="input" id="cidadeEntrega" name="cidadeEntrega" placeholder="Cidade" type="text"></div>
+                          <div><input class="input" id="dataEntrega" name="dataEntrega" type="date"></div>
+  
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="sanfona-elemento">
+                  <input type="checkbox" id="elemento4">
+                  <label for="elemento4">Observações</label>
+                  <div class="conteudo">
+                      
+                      
+                      <div class="form-div">
+                          <input class="input inputObservacoes" id="observacoes" name="observacoes" placeholder="Observações" type="text">
+                      </div>
+  
+  
+                  </div>
+              </div>
+  
+              <div class="btn">
+                  <button class="botao" type="submit" onclick="download()">Gerar Pedido</button>
+              </div>
+            </form>
+
+            <footer class="rodape">
+                <p>Copyright &copy; 2024 - by GRUPO 015</p>
+                <p>Josiane Espin Graciano Cavalcanti - 
+                  Rafael Morais Bomfim - 
+                  Roberval Marques Aceti - 
+                  Rodrigo Cavalcanti Borges - 
+                  Rodrigo Ferreira Zanoti -
+                  Letícia dos Santos Alves</p>            
+            </footer>
+
+            <script src="../../static/js/FileSaver.js-master/src/FileSaver.js"></script>
+          
+            <script>
+    
+                const saveAs = require("./FileSaver");
+                import { saveAs } from 'file-saver';
+    
+            </script>
+    
+                        <script>
+                function download() {
+                    alert("Ordem de Serviço gerada com sucesso");
+    
+    
+                    //-------------- DADOS DO COMPRADOR -------------
+                    var nomeComprador = document.getElementById("nomeComprador").value;
+                    var emailComprador = document.getElementById("emailComprador").value;
+                    var telefoneComprador = document.getElementById("telefoneComprador").value;                
+                    
+                    //----------- MENU ----------
+    
+                    var cookieTradicionalGrande = document.getElementById("cookieTradicionalGrande").value;
+                    var cookieTradicionalMini = document.getElementById("cookieTradicionalMini").value;
+                    var cookieRecheadoDoceDeLeite = document.getElementById("cookieRecheadoDoceDeLeite").value;
+                    var cookieRecheadoNutella = document.getElementById("cookieRecheadoNutella").value;
+                    var tortaDeCookieCarameloENutella = document.getElementById("tortaDeCookieCarameloENutella").value;
+                    var tortaDeCookieNutella = document.getElementById("tortaDeCookieNutella").value;
+                    var valorTotal = document.getElementById("valorTotal").value;
+    
+                    //------------ INFORMAÇÕES DA ENTREGA -----------
+                    var ruaEntrega = document.getElementById("ruaEntrega").value;
+                    var numEntrega = document.getElementById("numeroEntrega").value;
+                    var cepEntrega = document.getElementById("cepEntrega").value;
+                    var estadoEntrega = document.getElementById("estadoEntrega").value;
+                    var cidadeEntrega = document.getElementById("cidadeEntrega").value;
+                    var dataEntrega = document.getElementById("dataEntrega").value;
+                    
+                    //------------ INFORMAÇÕES ADICIONAIS -----------
+                    var observacoes = document.getElementById("observacoes").value;
+    
+                    var blob = new Blob(["---------------- ORDEM DE SERVIÇO --------------- \n \n",
+                    
+    
+    
+                    "\n--------------- DADOS DO COMPRADOR -------------- \n", "\n Nome do Comprador: ",
+                    nomeComprador, "\n Email do Comprador: ",
+                    emailComprador, "\n Telefone do Comprador: ",
+                    telefoneComprador, "\n",    
+                   
+                    "\n---------------- PEDIDO -------------- \n \n", verificaCookieTradicionalGrande(),
+                    cookieTradicionalGrande, "\n", verificaCookieTradicionalMini(),
+                    cookieTradicionalMini, "\n", verificaCookieRecheadoDoceDeLeite(),
+                    cookieRecheadoDoceDeLeite, "\n", verificaCookieRecheadoNutella(),
+                    cookieRecheadoNutella, "\n", verificaTortaDeCookieCarameloENutella(),
+                    tortaDeCookieCarameloENutella, "\n", verificaTortaDeCookieNutella(),
+                    tortaDeCookieNutella, "\n Valor Total: ",
+                    valorTotal, "\n", 
+                
+                    "\n------------- INFORMAÇÕES DA ENTREGA ------------ \n", "\n Rua: ",
+                    ruaEntrega, "\n Nº: ",
+                    numEntrega, "\n CEP: ",
+                    cepEntrega, "\n Estado: ",
+                    estadoEntrega, "\n Cidade: ",
+                    cidadeEntrega, "\n Data da Entrega: ",
+                    dataEntrega, "\n",
+    
+                    "\n------------- INFORMAÇOES ADICIONAIS ------------ \n",
+                    "\n Observações: ",
+                    observacoes,],
+    
+    
+                    {type: "text/plain;charset=utf-8"});
+                    saveAs(blob, nomeComprador);
+                }
+            </script>
+        </div>        
+    </body>
+</html>
