@@ -11,78 +11,78 @@ header h1 {
     font-weight: bold;
     text-align: center;
     padding: 2em 2em 0 2em;
-  }
+}
   
-  .form-container {
-      width: 25em;
-  }
+.form-container {
+    width: 25em;
+}
   
-  .container-login {
-      display: flex;
-      width: 33%;
-      height: 70%;
-      margin: auto;
-      justify-content: center;
-      align-items: center;
-  }
+.container-login {
+    display: flex;
+    width: 33%;
+    height: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
   
-  .acesso-ao-sistema h1 {
-      color: black;
-      font-size: 1.7em;
-      font-weight: bold;
-      padding: 1em;
-  }
+.acesso-ao-sistema h1 {
+    color: black;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 1em;
+}
   
-  .form-label {
-      font-size: 1em;
-      padding: 1em;
-  }
+.form-label {
+    font-size: 1em;
+    padding: 1em;
+}
   
-  .form-logo {
-      padding: 1em;
-  }
+.form-logo {
+    padding: 1em;
+}
   
-  .form {
-      color: white;
-      padding: 1em;
-      display: grid;
-  }
+.form {
+    color: white;
+    padding: 1em;
+    display: grid;
+}
   
-  .form-submit {
-      color: white;
-      background-color: rgb(61, 153, 200);
-      border-radius: 32px;
-  }
+.form-submit {
+    color: white;
+    background-color: rgb(61, 153, 200);
+    border-radius: 32px;
+}
   
-  .form-submit:hover {
-      background-color: rgb(111, 179, 215);
-  }
+.form-submit:hover {
+    background-color: rgb(111, 179, 215);
+}
   
-  .rodape {
-      color: white;
-      text-align: center;
-      padding: 2em 2em 0 2em;
-  }
+.rodape {
+    color: white;
+    text-align: center;
+    padding: 2em 2em 0 2em;
+}
   
-  .rodape p {
-      padding: 1em;
-  }
+.rodape p {
+    padding: 1em;
+}
   
-  .alinhar {
-      display: flex;
-  }
+.alinhar {
+    display: flex;
+}
   
-  .icon {
-      height: 50px;
-      width: 50px;
-      padding: 0 1em 0 0;
-  }
+.icon {
+    height: 50px;
+    width: 50px;
+    padding: 0 1em 0 0;
+}
   
-  .logo {
-      height: 100px;
-      width: 200px;
-      padding: 0 1em 0 0;
-  }
+.logo {
+    height: 100px;
+    width: 200px;
+    padding: 0 1em 0 0;
+}
 
 .botao {
     padding: 1em 4em;
