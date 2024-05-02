@@ -4,15 +4,16 @@
     <head>
         <meta name="viewport" content="width-device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <link rel="Stylesheet" href="css/reset.css"> 
-        <link rel="Stylesheet" href="css/index.css">
+        <link rel="Stylesheet" href="static/css/reset.css">
+        <link rel="Stylesheet" href="static/css/index.css">
     </head>
     <body>
-        <script src="js/script.js"></script>
+        <script src="static/js/script.js"></script>
+              
         <video autoplay loop muted class="video">
-            <source src="mp4/background loop white.mp4" type="video/mp4">
-            
+            <source src="static/mp4/background loop white.mp4" type="video/mp4">    
         </video>
+      
         <button id="btnGetStart" class="botao" onclick="transicao()"><p>Get Start</p></button>
 
             <section id="userLogin" class="container-login ocultar">            
@@ -23,35 +24,18 @@
                     
                     <div class="form-usuario form alinhar">
                         <!-- <label>Usuário</label> -->
-                        <div class="alinhar"><img src="png/user-icon-blue.png" class="icon"><input class="form-label" type="text" name="email" id="email" placeholder="Informe seu login"></div>
+                        <div class="alinhar"><img src="static/png/user-icon-blue.png" class="icon"><input class="form-label" type="text" name="email" id="email" placeholder="Informe seu login"></div>
                     </div>
         
                     <div class="form-senha form alinhar">
                         <!-- <label>Senha</label> -->
-                        <div class="alinhar"><img src="png/password-icon-blue (2).png" class="icon"><input class="form-label" type="password" name="senha" id="senha" placeholder="Informe sua senha"></div>
+                        <div class="alinhar"><img src="static/png/password-icon-blue (2).png" class="icon"><input class="form-label" type="password" name="senha" id="senha" placeholder="Informe sua senha"></div>
                     </div>
         
                     <div class="form">                    
-                        <button class="form-submit form-label" type="button" onclick="login()">Entrar</button>
+                        <button class="form-submit form-label" type="button" onclick="loginGitHub()">Entrar</button>
                     </div>
                 </form>
             </section>      
     </body>
-    
-                <!-- Firebase -->
-            <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-auth-compat.js"></script>
-            <script>
-                const firebaseConfig = {
-                    apiKey: "AIzaSyC710bRZ9duXt-80BcaotkLOwYGpklrDh0",
-                    authDomain: "gerador-de-os-f1143.firebaseapp.com",
-                    projectId: "gerador-de-os-f1143",
-                    storageBucket: "gerador-de-os-f1143.appspot.com",
-                    messagingSenderId: "812709449801",
-                    appId: "1:812709449801:web:6f2f53af0422994776af98"
-              };
-    
-                firebase.initializeApp(firebaseConfig); 
-              
-    </script>
 </html>
