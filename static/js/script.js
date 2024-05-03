@@ -1,4 +1,4 @@
-function login() {
+function login() { // Possibilita o login pelo Flask
   
     var nome = document.getElementById("email").value;
     var senha = document.getElementById("senha").value;
@@ -11,7 +11,7 @@ function login() {
     }
 }
 
-function loginGitHub() {
+function loginGitHub() { // Possibilita o login pelo GitHub
   
     var nome = document.getElementById("email").value;
     var senha = document.getElementById("senha").value;
@@ -24,7 +24,7 @@ function loginGitHub() {
     }
 }
 
-function transicao() {
+function transicao() { // Faz o efeito de esmaecer após clicar no botão Get Start
 
     var btnGetStart = document.getElementById("btnGetStart");
     var userLogin = document.getElementById("userLogin");
@@ -36,7 +36,7 @@ function transicao() {
     btnGetStart.classList.add("ocultar");
 }
 
-function calcula() {
+function calcula() { // Calcula o valor total do pedido de maneira automática ao detectar mudanças
     
     // Padroniza os preços de cada produto
     var precoCookieTradicionalGrande = 10.00;
@@ -66,7 +66,7 @@ function calcula() {
     document.getElementById("valorTotal").value = "R$ " + valorTotal.toFixed(2);
 }
 
-function verificaCookieTradicionalGrande() {
+function verificaCookieTradicionalGrande() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
 
         if(document.getElementById("cookieTradicionalGrande").value != 0) {
             var texto = "Cookie Tradicional Grande: ";
@@ -78,7 +78,7 @@ function verificaCookieTradicionalGrande() {
         }
 }
 
-function verificaCookieTradicionalMini() {
+function verificaCookieTradicionalMini() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
 
     if(document.getElementById("cookieTradicionalMini").value != 0) {
         var texto = "Cookie Tradicional Mini: ";
@@ -90,7 +90,7 @@ function verificaCookieTradicionalMini() {
     }
 }
 
-function verificaCookieRecheadoDoceDeLeite() {
+function verificaCookieRecheadoDoceDeLeite() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
 
     if(document.getElementById("cookieRecheadoDoceDeLeite").value != 0) {
         var texto = "Cookie Recheado Doce De Leite: ";
@@ -102,7 +102,7 @@ function verificaCookieRecheadoDoceDeLeite() {
     }
 }
 
-function verificaCookieRecheadoNutella() {
+function verificaCookieRecheadoNutella() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
 
     if(document.getElementById("cookieRecheadoNutella").value != 0) {
         var texto = "Cookie Recheado Nutella: ";
@@ -114,7 +114,7 @@ function verificaCookieRecheadoNutella() {
     }
 }
 
-function verificaTortaDeCookieCarameloENutella() {
+function verificaTortaDeCookieCarameloENutella() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
 
     if(document.getElementById("tortaDeCookieCarameloENutella").value != 0) {
         var texto = "Torta De Cookie Caramelo e Nutella: ";
@@ -126,7 +126,7 @@ function verificaTortaDeCookieCarameloENutella() {
     }
 }
 
-function verificaTortaDeCookieNutella() {
+function verificaTortaDeCookieNutella() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
 
     if(document.getElementById("tortaDeCookieNutella").value != 0) {
         var texto = "Torta De Cookie Nutella: ";
@@ -138,42 +138,42 @@ function verificaTortaDeCookieNutella() {
     }
 }
 
-function somaCookieTradicionalGrande() {
+function somaCookieTradicionalGrande() { // Botão “Cookie” que adiciona uma unidade do produto no pedido
     
     document.getElementById("cookieTradicionalGrande").value++;
     calcula();
 
 }
 
-function somaCookieTradicionalMini() {
+function somaCookieTradicionalMini() { // Botão “Cookie” que adiciona uma unidade do produto no pedido
     
     document.getElementById("cookieTradicionalMini").value++;
     calcula();
 
 }
 
-function somaCookieRecheadoDoceDeLeite() {
+function somaCookieRecheadoDoceDeLeite() { // Botão “Cookie” que adiciona uma unidade do produto no pedido
     
     document.getElementById("cookieRecheadoDoceDeLeite").value++;
     calcula();
 
 }
 
-function somaCookieRecheadoNutella() {
+function somaCookieRecheadoNutella() { // Botão “Cookie” que adiciona uma unidade do produto no pedido
     
     document.getElementById("cookieRecheadoNutella").value++;
     calcula();
 
 }
 
-function somaTortaDeCookieCarameloENutella() {
+function somaTortaDeCookieCarameloENutella() { // Botão “Cookie” que adiciona uma unidade do produto no pedido
     
     document.getElementById("tortaDeCookieCarameloENutella").value++;
     calcula();
 
 }
 
-function somaTortaDeCookieNutella() {
+function somaTortaDeCookieNutella() { // Botão “Cookie” que adiciona uma unidade do produto no pedido
     
     document.getElementById("tortaDeCookieNutella").value++;
     calcula();
