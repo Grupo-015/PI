@@ -29,7 +29,7 @@ def gravar():
     tortaDeCookieCarameloENutella = request.form.get('tortaDeCookieCarameloENutella')
     tortaDeCookieNutella = request.form.get('tortaDeCookieNutella')
 
-    valorTotal = request.form.get('valorTotal')
+    valorTotal = request.form.get('valorTotalOculto')
 
     ruaEntrega = request.form.get('ruaEntrega')
     numeroEntrega = request.form.get('numeroEntrega')
