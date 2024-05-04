@@ -64,6 +64,7 @@ function calcula() { // Calcula o valor total do pedido de maneira automática a
 
     // Atualizar o campo de valor total no formulário
     document.getElementById("valorTotal").value = "R$ " + valorTotal.toFixed(2);
+    document.getElementById("valorTotalOculto").value = valorTotal;
 }
 
 function verificaCookieTradicionalGrande() { // Possibilita que apenas apareçam na nota fiscal os produtos efetivamente encomendados
