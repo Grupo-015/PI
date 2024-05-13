@@ -9,5 +9,7 @@
 :page_with_curl: *O objetivo do projeto é tornar o dia a dia de um trabalhador autônomo do ramo de venda de sobremesas mais fácil atendendo suas necessidades por meio do uso de tecnologias corretas. Em especial, atender a necessidade de facilitação, padronização, gerenciamento e otimização da emissão das ordens de pedido/encomendas. A aplicação é pautada pela simplicidade, tanto na experiência do usuário quanto no consumo de recursos.*
 
 
+:pencil: *Nosso grupo teve a orientação de Davi Navarro Ciasca*
+
 
  
